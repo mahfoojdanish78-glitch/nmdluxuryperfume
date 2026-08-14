@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NMD LUXURY PERFUME</title>
+
+<style>
+
+/* =========================
+   NMD LUXURY PERFUME
+   PREMIUM E-COMMERCE CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f4f1;
+    color:#151515;
+}
+
+button,
+input,
+textarea{
+    font-family:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* TOP BAR */
+
+.top-bar{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:9px 10px;
+    font-size:10px;
+    letter-spacing:1px;
+}
+
+/* HEADER */
+
+header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #e8e5df;
+}
+
+.nav{
+    min-height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.logo span{
+    display:block;
+    color:#a77d25;
+    font-size:8px;
+    letter-spacing:3px;
+    margin-top:5px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.nav-btn{
+    width:42px;
+    height:42px;
+    border:1px solid #ddd;
+    background:#fff;
+    border-radius:50%;
+}
+
+.cart-btn{
+    position:relative;
+}
+
+.cart-count{
+    position:absolute;
+    top:-4px;
+    right:-3px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#b28a2e;
+    color:#fff;
+    font-size:9px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* HERO */
+
+.hero{
+    background:#171717;
+    color:#fff;
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    padding:70px 0;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.eyebrow{
+    color:#c39a45;
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.hero h1{
+    font-size:clamp(42px,8vw,75px);
+    line-height:.98;
+    margin:18px 0;
+}
+
+.hero p{
+    color:#c9c9c9;
+    max-width:520px;
+    font-size:14px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    border:0;
+    padding:14px 23px;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+
+.btn-gold{
+    background:#b28a2e;
+    color:#fff;
+}
+
+.btn-dark{
+    background:#171717;
+    color:#fff;
+}
+
+.btn-white{
+    background:#fff;
+    color:#111;
+}
+
+/* TRUST */
+
+.trust{
+    background:#fff;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.trust-item{
+    text-align:center;
+    padding:22px 8px;
+    border-right:1px solid #eee;
+}
+
+.trust-item:last-child{
+    border-right:0;
+}
+
+.trust-icon{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.trust-item strong{
+    display:block;
+    font-size:10px;
+}
+
+.trust-item span{
+    display:block;
+    color:#888;
+    font-size:9px;
+    margin-top:4px;
+}
+
+/* SECTION */
+
+.section{
+    padding:60px 0;
+}
+
+.section-head{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-head h2{
+    font-size:32px;
+    margin:9px 0;
+}
+
+.section-head p{
+    color:#777;
+    font-size:12px;
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.product{
+    background:#fff;
+    border:1px solid #e8e5df;
+    position:relative;
+    overflow:hidden;
+}
+
+.product-image{
+    width:100%;
+    height:300px;
+    background:#eee;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.product-info{
+    padding:17px;
+}
+
+.product-category{
+    color:#a77d25;
+    font-size:9px;
+    letter-spacing:1px;
+    font-weight:bold;
+}
+
+.product-info h3{
+    font-size:15px;
+    margin:7px 0;
+}
+
+.stars{
+    color:#b28a2e;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.price{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    margin-bottom:13px;
+}
+
+.price strong{
+    font-size:18px;
+}
+
+.price del{
+    color:#999;
+    font-size:11px;
+}
+
+.add-cart{
+    width:100%;
+    border:0;
+    background:#171717;
+    color:#fff;
+    padding:13px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+/* OFFER */
+
+.offer{
+    background:#171717;
+    color:#fff;
+    text-align:center;
+    padding:55px 15px;
+}
+
+.offer h2{
+    font-size:30px;
+    margin:10px 0;
+}
+
+.offer p{
+    color:#ccc;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:#fff;
+    padding:40px 0 90px;
+}
+
+footer h3{
+    font-size:16px;
+}
+
+footer p{
+    color:#aaa;
+    font-size:12px;
+    line-height:1.7;
+    margin-top:8px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:30px;
+    padding-top:18px;
+    text-align:center;
+    color:#777;
+    font-size:10px;
+}
+
+/* CART OVERLAY */
+
+.overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    z-index:2000;
+}
+
+.overlay.show{
+    display:block;
+}
+
+.cart-panel{
+    width:min(430px,94%);
+    height:100%;
+    margin-left:auto;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+}
+
+.cart-header{
+    padding:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+}
+
+.close-btn{
+    width:35px;
+    height:35px;
+    border:0;
+    border-radius:50%;
+    background:#eee;
+}
+
+.cart-items{
+    flex:1;
+    overflow:auto;
+    padding:15px;
+}
+
+.empty-cart{
+    text-align:center;
+    color:#888;
+    padding:50px 10px;
+}
+
+.cart-item{
+    display:flex;
+    gap:12px;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
+
+.cart-item-image{
+    width:70px;
+    height:70px;
+    background:#eee;
+    flex-shrink:0;
+}
+
+.cart-item-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.cart-item-info{
+    flex:1;
+}
+
+.cart-item-info h4{
+    font-size:12px;
+    margin-bottom:5px;
+}
+
+.cart-item-info p{
+    font-size:12px;
+    color:#555;
+}
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    margin-top:8px;
+}
+
+.quantity button{
+    width:25px;
+    height:25px;
+    border:1px solid #ddd;
+    background:#fff;
+}
+
+.remove-btn{
+    border:0;
+    background:none;
+    color:#a00;
+    font-size:10px;
+    margin-top:5px;
+}
+
+.cart-footer{
+    border-top:1px solid #eee;
+    padding:18px;
+}
+
+.cart-total{
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    margin-bottom:13px;
+}
+
+/* CHECKOUT */
+
+.checkout{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:#f5f4f1;
+    z-index:3000;
+    overflow:auto;
+}
+
+.checkout.show{
+    display:block;
+}
+
+.checkout-header{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    padding:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.checkout-main{
+    width:92%;
+    max-width:950px;
+    margin:25px auto;
+}
+
+.checkout-grid{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:18px;
+}
+
+.checkout-card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    padding:20px;
+}
+
+.checkout-card h2{
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+.form-group{
+    margin-bottom:14px;
+}
+
+.form-group label{
+    display:block;
+    font-size:10px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    border:1px solid #ddd;
+    padding:12px;
+    outline:none;
+    border-radius:3px;
+}
+
+.form-group textarea{
+    height:90px;
+    resize:none;
+}
+
+.summary-line{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+    font-size:11px;
+}
+
+.summary-total{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .trust-item:nth-child(2){
+        border-right:0;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+        gap:9px;
+    }
+
+    .product-image{
+        height:210px;
+    }
+
+    .product-info{
+        padding:11px;
+    }
+
+    .product-info h3{
+        font-size:13px;
+    }
+
+    .checkout-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        min-height:430px;
+    }
+}
+
+@media(max-width:380px){
+
+    .product-image{
+        height:175px;
+    }
+
+    .logo{
+        font-size:14px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PART 1 ENDS HERE -->
+<!-- =========================
+     PART 2 — HTML
+========================= -->
+
+<div class="top-bar">
+    ✦ FREE SHIPPING ON ORDERS ABOVE ₹999 ✦
+</div>
+
+<header>
+    <div class="container nav">
+
+        <div class="logo">
+            NMD LUXURY PERFUME
+            <span>THE ART OF FRAGRANCE</span>
+        </div>
+
+        <div class="nav-right">
+
+            <button class="nav-btn"
+                    onclick="goProducts()">
+                ⌕
+            </button>
+
+            <button class="nav-btn cart-btn"
+                    onclick="openCart()">
+
+                🛒
+
+                <span class="cart-count"
+                      id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                NMD LUXURY PERFUME
+            </div>
+
+            <h1>
+                A Fragrance<br>
+                That Defines You.
+            </h1>
+
+            <p>
+                Discover premium fragrances crafted
+                for those who want their presence
+                to be unforgettable.
+            </p>
+
+            <button class="btn btn-gold"
+                    onclick="goProducts()">
+                SHOP NOW
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRUST -->
+
+<section class="trust">
+
+    <div class="container trust-grid">
+
+        <div class="trust-item">
+
+            <div class="trust-icon">
+                🚚
+            </div>
+
+            <strong>
+                FAST DELIVERY
+            </strong>
+
+            <span>
+                Pan India Delivery
+            </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <div class="trust-icon">
+                🔒
+            </div>
+
+            <strong>
+                SECURE PAYMENT
+            </strong>
+
+            <span>
+                Razorpay
+            </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <div class="trust-icon">
+                ✨
+            </div>
+
+            <strong>
+                PREMIUM QUALITY
+            </strong>
+
+            <span>
+                Luxury Fragrance
+            </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <div class="trust-icon">
+                💯
+            </div>
+
+            <strong>
+                GENUINE PRODUCTS
+            </strong>
+
+            <span>
+                Quality Guaranteed
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="section"
+         id="productsSection">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <div class="eyebrow">
+                OUR COLLECTION
+            </div>
+
+            <h2>
+                NMD Luxury Collection
+            </h2>
+
+            <p>
+                Choose your signature fragrance.
+            </p>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="product1.jpg"
+                         alt="SIGNE NS Floral Elegance">
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        NMD COLLECTION
+                    </div>
+
+                    <h3>
+                        SIGNE NS Floral Elegance
+                    </h3>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹799
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart"
+                            onclick="addToCart(1)">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="product2.jpg"
+                         alt="SIGNE NS">
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        NMD COLLECTION
+                    </div>
+
+                    <h3>
+                        SIGNE NS
+                    </h3>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹599
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart"
+                            onclick="addToCart(2)">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="product3.jpg"
+                         alt="XZ Perfume">
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        NMD COLLECTION
+                    </div>
+
+                    <h3>
+                        XZ
+                    </h3>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹599
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart"
+                            onclick="addToCart(3)">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="product4.jpg"
+                         alt="DALIK
+                           alt="DALIK Perfume">
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        NMD COLLECTION
+                    </div>
+
+                    <h3>
+                        DALIK
+                    </h3>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹799
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart"
+                            onclick="addToCart(4)">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="product5.jpg"
+                         alt="LAVY Perfume">
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        NMD COLLECTION
+                    </div>
+
+                    <h3>
+                        LAVY
+                    </h3>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹699
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart"
+                            onclick="addToCart(5)">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="product6.jpg"
+                         alt="STALISH Perfume">
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        NMD COLLECTION
+                    </div>
+
+                    <h3>
+                        STALISH
+                    </h3>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹799
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart"
+                            onclick="addToCart(6)">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OFFER -->
+
+<section class="offer">
+
+    <div class="eyebrow">
+        NMD SPECIAL COLLECTION
+    </div>
+
+    <h2>
+        Find Your Signature Scent
+    </h2>
+
+    <p>
+        Premium fragrance. Premium experience.
+    </p>
+
+    <button class="btn btn-gold"
+            onclick="goProducts()">
+
+        SHOP COLLECTION
+
+    </button>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <h3>
+            NMD LUXURY PERFUME
+        </h3>
+
+        <p>
+            Premium fragrances crafted to make
+            your presence unforgettable.
+        </p>
+
+        <p>
+            Email:
+            nmdluxuryperfume@gmail.com
+        </p>
+
+        <div class="copyright">
+
+            © 2026 NMD LUXURY PERFUME.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- CART POPUP -->
+
+<div class="overlay"
+     id="cartOverlay"
+     onclick="outsideCart(event)">
+
+    <div class="cart-panel">
+
+        <div class="cart-header">
+
+            <strong>
+                YOUR CART
+            </strong>
+
+            <button class="close-btn"
+                    onclick="closeCart()">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="cart-items"
+             id="cartItems">
+
+            <div class="empty-cart">
+                                    
+                                                    Your cart is empty.
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    TOTAL
+                </span>
+
+                <span id="cartTotal">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <button class="btn btn-gold"
+                    style="width:100%;"
+                    onclick="goToCheckout()">
+
+                NEXT
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     CHECKOUT
+========================= -->
+
+<div class="checkout"
+     id="checkout">
+
+    <div class="checkout-header">
+
+        <strong>
+            NMD LUXURY PERFUME
+        </strong>
+
+        <button class="close-btn"
+                onclick="closeCheckout()">
+
+            ✕
+
+        </button>
+
+    </div>
+
+
+    <div class="checkout-main">
+
+        <div class="checkout-grid">
+
+
+            <!-- CUSTOMER DETAILS -->
+
+            <div class="checkout-card">
+
+                <h2>
+                    Delivery Details
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label>
+                        FULL NAME
+                    </label>
+
+                    <input
+                        id="customerName"
+                        type="text"
+                        placeholder="Enter your full name">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        MOBILE NUMBER
+                    </label>
+
+                    <input
+                        id="customerPhone"
+                        type="tel"
+                        maxlength="10"
+                        placeholder="Enter 10 digit mobile number">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        EMAIL ADDRESS
+                    </label>
+
+                    <input
+                        id="customerEmail"
+                        type="email"
+                        placeholder="Enter your email">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        FULL ADDRESS
+                    </label>
+
+                    <textarea
+                        id="customerAddress"
+                        placeholder="House no, street, area, city, state"></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        PIN CODE
+                    </label>
+
+                    <input
+                        id="customerPincode"
+                        type="tel"
+                        maxlength="6"
+                        placeholder="Enter 6 digit pincode">
+
+                </div>
+
+
+                <button class="btn btn-gold"
+                        style="width:100%;"
+                        onclick="goToPayment()">
+
+                    NEXT — PAYMENT
+
+                </button>
+
+            </div>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <div class="checkout-card">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+                <div id="checkoutSummary"></div>
+
+                <div class="summary-total">
+
+                    <span>
+                        TOTAL
+                    </span>
+
+                    <span id="checkoutTotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- PART 2 END --> 
+<!-- =========================
+     PART 3 — JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+   PRODUCTS
+========================= */
+
+const products = [
+
+    {
+        id: 1,
+        name: "SIGNE NS Floral Elegance",
+        price: 799,
+        image: "images/product1.jpg"
+    },
+
+    {
+        id: 2,
+        name: "SIGNE NS",
+        price: 599,
+        image: "images/product2.jpg"
+    },
+
+    {
+        id: 3,
+        name: "XZ",
+        price: 599,
+        image: "images/product3.jpg"
+    },
+
+    {
+        id: 4,
+        name: "DALIK",
+        price: 799,
+        image: "images/product4.jpg"
+    },
+
+    {
+        id: 5,
+        name: "LAVY",
+        price: 699,
+        image: "images/product5.jpg"
+    },
+
+    {
+        id: 6,
+        name: "STALISH",
+        price: 799,
+        image: "images/product6.jpg"
+    }
+
+];
+
+
+let cart = [];
+
+
+/* =========================
+   ADD TO CART
+========================= */
+
+function addToCart(id){
+
+    const product =
+        products.find(item => item.id === id);
+
+    if(!product){
+        return;
+    }
+
+    const existing =
+        cart.find(item => item.id === id);
+
+    if(existing){
+
+        existing.qty++;
+
+    }else{
+
+        cart.push({
+            ...product,
+            qty: 1
+        });
+
+    }
+
+    updateCart();
+
+    openCart();
+
+}
+
+
+/* =========================
+   UPDATE CART
+========================= */
+
+function updateCart(){
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+    const cartItems =
+        document.getElementById("cartItems");
+
+    const cartTotal =
+        document.getElementById("cartTotal");
+
+
+    let quantity = 0;
+    let total = 0;
+
+
+    cart.forEach(item => {
+
+        quantity += item.qty;
+
+        total +=
+            item.price * item.qty;
+
+    });
+
+
+    cartCount.textContent =
+        quantity;
+
+
+    cartTotal.textContent =
+        "₹" + total.toLocaleString("en-IN");
+
+
+    if(cart.length === 0){
+
+        cartItems.innerHTML = `
+            <div class="empty-cart">
+                Your cart is empty.
+            </div>
+        `;
+
+        return;
+    }
+
+
+    cartItems.innerHTML = cart.map(item => `
+
+        <div class="cart-item">
+
+            <div class="cart-item-image">
+
+                <img
+                    src="${item.image}"
+                    alt="${item.name}"
+                >
+
+            </div>
+
+
+            <div class="cart-item-info">
+
+                <h4>
+                    ${item.name}
+                </h4>
+
+                <p>
+                    ₹${item.price.toLocaleString("en-IN")}
+                </p>
+
+
+                <div class="quantity">
+
+                    <button
+                        onclick="changeQuantity(${item.id}, -1)">
+                        −
+                    </button>
+
+                    <span>
+                        ${item.qty}
+                    </span>
+
+                    <button
+                        onclick="changeQuantity(${item.id}, 1)">
+                        +
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="remove-btn"
+                    onclick="removeFromCart(${item.id})">
+
+                    Remove
+
+                </button>
+
+            </div>
+
+        </div>
+
+    `).join("");
+
+}
+
+
+/* =========================
+   QUANTITY
+========================= */
+
+function changeQuantity(id, change){
+
+    const item =
+        cart.find(product => product.id === id);
+
+    if(!item){
+        return;
+    }
+
+
+    item.qty += change;
+
+
+    if(item.qty <= 0){
+
+        cart =
+            cart.filter(product => product.id !== id);
+
+    }
+
+
+    updateCart();
+
+}
+
+
+/* =========================
+   REMOVE
+========================= */
+
+function removeFromCart(id){
+
+    cart =
+        cart.filter(item => item.id !== id);
+
+    updateCart();
+
+}
+
+
+/* =========================
+   OPEN CART
+========================= */
+
+function openCart(){
+
+    document
+        .getElementById("cartOverlay")
+        .classList.add("show");
+
+}
+
+
+/* =========================
+   CLOSE CART
+========================= */
+
+function closeCart(){
+
+    document
+        .getElementById("cartOverlay")
+        .classList.remove("show");
+
+}
+
+
+/* =========================
+   OUTSIDE CART
+========================= */
+
+function outsideCart(event){
+
+    if(event.target.id === "cartOverlay"){
+
+        closeCart();
+
+    }
+
+}
+
+
+/* =========================
+   CHECKOUT
+========================= */
+
+function goToCheckout(){
+
+    if(cart.length === 0){
+
+        alert("Please add a product to cart first.");
+
+        return;
+    }
+
+
+    closeCart();
+
+    renderCheckoutSummary();
+
+
+    document
+        .getElementById("checkout")
+        .classList.add("show");
+
+
+    document.body.style.overflow =
+        "hidden";
+
+}
+
+
+/* =========================
+   CLOSE CHECKOUT
+========================= */
+
+function closeCheckout(){
+
+    document
+        .getElementById("checkout")
+        .classList.remove("show");
+
+    document.body.style.overflow =
+        "";
+
+}
+
+
+/* =========================
+   ORDER SUMMARY
+========================= */
+
+function renderCheckoutSummary(){
+
+    const summary =
+        document.getElementById("checkoutSummary");
+
+    const totalBox =
+        document.getElementById("checkoutTotal");
+
+
+    let total = 0;
+
+
+    summary.innerHTML =
+        cart.map(item => {
+
+            const subtotal =
+                item.price * item.qty;
+
+
+            total += subtotal;
+
+
+            return `
+
+                <div class="summary-line">
+
+                    <span>
+                        ${item.name}
+                        × ${item.qty}
+                    </span>
+
+                    <strong>
+                        ₹${subtotal.toLocaleString("en-IN")}
+                    </strong>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+
+    totalBox.textContent =
+        "₹" + total.toLocaleString("en-IN");
+
+}
+
+
+/* =========================
+   GET CUSTOMER DETAILS
+========================= */
+
+function getCustomerDetails(){
+
+    return {
+
+        name:
+            document
+                .getElementById("customerName")
+                .value
+                .trim(),
+
+        phone:
+            document
+                .getElementById("customerPhone")
+                .value
+                .trim(),
+
+        email:
+            document
+                .getElementById("customerEmail")
+                .value
+                .trim(),
+
+        address:
+            document
+                .getElementById("customerAddress")
+                .value
+                .trim(),
+
+        pincode:
+            document
+                .getElementById("customerPincode")
+                .value
+                .trim()
+
+    };
+
+}
+
+
+/* =========================
+   VALIDATION
+========================= */
+
+function validateCustomer(customer){
+
+    if(!customer.name){
+
+        alert("Please enter your name.");
+
+        return false;
+    }
+
+
+    if(!/^[0-9]{10}$/.test(customer.phone)){
+
+        alert(
+            "Please enter a valid 10 digit mobile number."
+        );
+
+        return false;
+    }
+
+
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customer.email)){
+
+        alert(
+            "Please enter a valid email address."
+        );
+
+        return false;
+    }
+
+
+    if(!customer.address){
+
+        alert(
+            "Please enter your full address."
+        );
+
+        return false;
+    }
+
+
+    if(!/^[0-9]{6}$/.test(customer.pincode)){
+
+        alert(
+            "Please enter a valid 6 digit pincode."
+        );
+
+        return false;
+    }
+
+
+    return true;
+
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+function getCartTotal(){
+
+    return cart.reduce(
+        (total, item) =>
+            total + (item.price * item.qty),
+        0
+    );
+
+}
+
+
+/* =========================
+   NEXT → PAYMENT
+========================= */
+
+async function goToPayment(){
+
+    if(cart.length === 0){
+
+        alert("Your cart is empty.");
+
+        return;
+    }
+
+
+    const customer =
+        getCustomerDetails();
+
+
+    if(!validateCustomer(customer)){
+
+        return;
+    }
+
+
+    const total =
+        getCartTotal();
+
+
+    /*
+      IMPORTANT:
+
+      Razorpay Secret Key ko
+      HTML mein nahi rakhenge.
+
+      Order Netlify backend se create hoga.
+    */
+
+
+    try{
+
+        const response =
+            await fetch(
+                "/.netlify/functions/create-order",
+                {
+
+                    method: "POST",
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+
+                    },
+
+                    body: JSON.stringify({
+
+                        amount: total,
+
+                        customer: customer,
+
+                        items: cart.map(item => ({
+
+                            id: item.id,
+
+                            name: item.name,
+
+                            price: item.price,
+
+                            quantity: item.qty
+
+                        }))
+
+                    })
+
+                }
+            );
+
+
+        const rawResponse = await response.text();
+
+console.log("Netlify response:", rawResponse);
+
+let data;
+
+try {
+    data = JSON.parse(rawResponse);
+} catch (e) {
+    throw new Error(
+        "Netlify Function response invalid: " +
+        (rawResponse || "EMPTY RESPONSE")
+    );
+}
+
+if(!response.ok){
+
+    throw new Error(
+        data.message ||
+        "Unable to create payment order."
+    );
+
+}
+
+openRazorpay(
+    data,
+    customer
+);
+
+
+        if(!response.ok){
+
+            throw new Error(
+                data.message ||
+                "Unable to create payment order."
+            );
+
+        }
+
+
+        openRazorpay(
+            data,
+            customer
+        );
+
+
+    }catch(error){
+
+        console.error(
+            "Payment Error:",
+            error
+        );
+
+
+        alert(
+            error.message ||
+            "Payment start nahi ho paya."
+        );
+
+    }
+
+}
+
+
+/* =========================
+   RAZORPAY
+========================= */
+
+function openRazorpay(
+    orderData,
+    customer
+){
+
+    if(typeof Razorpay === "undefined"){
+
+        alert(
+            "Razorpay load nahi hua. Page refresh karke try karo."
+        );
+
+        return;
+    }
+
+
+    const options = {
+
+        key:
+            "rzp_live_TPPWWsH51ggy2X",
+
+        amount:
+            orderData.amount,
+
+        currency:
+            "INR",
+
+        name:
+            "NMD LUXURY PERFUME",
+
+        description:
+            "NMD Luxury Perfume Order",
+
+        order_id:
+            orderData.order_id,
+
+
+        prefill: {
+
+            name:
+                customer.name,
+
+            email:
+                customer.email,
+
+            contact:
+                customer.phone
+
+        },
+
+
+        theme: {
+
+            color:
+                "#b28a2e"
+
+        },
+
+
+        handler:
+            function(response){
+
+                verifyPayment(
+                    response,
+                    customer
+                );
+
+            }
+
+    };
+
+
+    const razorpay =
+        new Razorpay(options);
+
+
+    razorpay.on(
+        "payment.failed",
+        function(response){
+
+            console.error(
+                "Payment Failed:",
+                response.error
+            );
+
+
+            alert(
+                response.error &&
+                response.error.description
+                ?
+                response.error.description
+                :
+                "Payment failed. Please try again."
+            );
+
+        }
+    );
+
+
+    razorpay.open();
+
+}
+
+
+/* =========================
+   VERIFY PAYMENT
+========================= */
+
+async function verifyPayment(
+    paymentResponse,
+    customer
+){
+
+    try{
+
+        const response =
+            await fetch(
+                "/.netlify/functions/verify-payment",
+                {
+
+                    method: "POST",
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+
+                    },
+
+                    body: JSON.stringify({
+
+                        razorpay_order_id:
+                            paymentResponse.razorpay_order_id,
+
+                        razorpay_payment_id:
+                            paymentResponse.razorpay_payment_id,
+
+                        razorpay_signature:
+                            paymentResponse.razorpay_signature,
+
+                        customer:
+                            customer,
+
+                        items:
+                            cart.map(item => ({
+
+                                id: item.id,
+
+                                name: item.name,
+
+                                price: item.price,
+
+                                quantity: item.qty
+
+                            })),
+
+                        total:
+                            getCartTotal()
+
+                    })
+
+                }
+            );
+
+
+        const data =
+            await response.json();
+
+
+        if(!response.ok){
+
+            throw new Error(
+                data.message ||
+                "Payment verification failed."
+            );
+
+        }
+
+
+        alert(
+            "Payment successful! 🎉\n\n" +
+            "Your order has been placed successfully."
+        );
+
+
+        cart = [];
+
+        updateCart();
+
+        closeCheckout();
+
+
+    }catch(error){
+
+        console.error(
+            "Verification Error:",
+            error
+        );
+
+
+        alert(
+            "Payment verification mein problem aayi. Please contact support."
+        );
+
+    }
+
+}
+
+
+/* =========================
+   SCROLL TO PRODUCTS
+========================= */
+
+function goProducts(){
+
+    document
+        .getElementById("productsSection")
+        .scrollIntoView({
+
+            behavior: "smooth"
+
+        });
+
+}
+
+
+/* =========================
+   START
+========================= */
+
+updateCart();
+
+</script>
+
+
+<!-- RAZORPAY CHECKOUT -->
+
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js">
+</script>
+
+
+</body>
+</html>
